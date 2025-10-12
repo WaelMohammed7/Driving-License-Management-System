@@ -123,7 +123,7 @@ The system is powered by a well-structured and normalized **SQL Server** databas
 
 ## 👨‍💻 Developer
 
-This project was **individually developed** by [Wael Mohammed](www.linkedin.com/in/wael-mohammed-sharif),  
+This project was **individually developed** by [Wael Mohammed](https://www.linkedin.com/in/wael-mohammed-sharif),  
 focusing on **C#, .NET Framework, ADO.NET, 3-Tier Architecture, and SQL Server** to ensure scalability, performance, and clean code structure.
 
 ---
