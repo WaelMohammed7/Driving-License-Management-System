@@ -16,3 +16,9 @@ C:\Users\XPRISTO\Videos\Wael\Projects Wael\Projects.c#\DVLD Project\DVLD_DataAcc
 C:\Users\XPRISTO\Videos\Wael\Projects Wael\Projects.c#\DVLD Project\DVLD_DataAccess\obj\Debug\DVLD_DataAccess.csproj.CoreCompileInputs.cache
 C:\Users\XPRISTO\Videos\Wael\Projects Wael\Projects.c#\DVLD Project\DVLD_DataAccess\obj\Debug\DVLD_DataAccess.dll
 C:\Users\XPRISTO\Videos\Wael\Projects Wael\Projects.c#\DVLD Project\DVLD_DataAccess\obj\Debug\DVLD_DataAccess.pdb
+C:\Wael Projects C#\DVLD Project\DVLD_DataAccess\bin\Debug\DVLD_DataAccess.dll
+C:\Wael Projects C#\DVLD Project\DVLD_DataAccess\bin\Debug\DVLD_DataAccess.pdb
+C:\Wael Projects C#\DVLD Project\DVLD_DataAccess\obj\Debug\DVLD_DataAccess.csproj.AssemblyReference.cache
+C:\Wael Projects C#\DVLD Project\DVLD_DataAccess\obj\Debug\DVLD_DataAccess.csproj.CoreCompileInputs.cache
+C:\Wael Projects C#\DVLD Project\DVLD_DataAccess\obj\Debug\DVLD_DataAccess.dll
+C:\Wael Projects C#\DVLD Project\DVLD_DataAccess\obj\Debug\DVLD_DataAccess.pdb
