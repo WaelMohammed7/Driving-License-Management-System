@@ -41,19 +41,60 @@ This architecture ensures clean separation of concerns, scalability, and easy ma
 
 ## 🗃️ Database Design
 
-The system is powered by a well-structured and normalized **SQL Server** database supporting all DVLD operations.
+The system uses several main tables to manage all licensing operations efficiently:
 
-**Core Entities:**  
-`People`, `Users`, `Drivers`, `Countries`
+| Table                               | Description                                                                                   |
+| ----------------------------------- | --------------------------------------------------------------------------------------------- |
+| **Applications**                    | Stores information about all license-related applications submitted by users.                 |
+| **ApplicationTypes**                | Defines types of applications (New License, Renewal, Replacement, etc.).                      |
+| **Countries**                       | Contains the list of countries used in driver and license records.                            |
+| **DetainedLicenses**                | Records licenses that have been detained or suspended, including reasons and release details. |
+| **Drivers**                         | Holds driver-specific data linked to people who have valid licenses.                          |
+| **InternationalLicenses**           | Stores data for issued international driving licenses.                                        |
+| **LicenseClasses**                  | Defines categories or classes of driving licenses (A, B, C, etc.).                            |
+| **Licenses**                        | Stores all issued license records with validity dates and related info.                       |
+| **LocalDrivingLicenseApplications** | Tracks local license applications and links them to the applicant.                            |
+| **People**                          | Central table storing personal data such as name, national number, and contact information.   |
+| **TestAppointments**                | Manages scheduled test appointments for applicants.                                           |
+| **Tests**                           | Records actual test results and links them to the respective applications.                    |
+| **TestTypes**                       | Defines the types of tests (Vision, Written, Practical).                                      |
+| **Users**                           | Stores user login information, roles, and permissions within the system.                      |
 
-**Licensing Workflow:**  
-`Applications`, `ApplicationTypes`, `Licenses` (Local & International), `LicenseClasses`
+---
 
-**Testing System:**  
-`Tests`, `TestTypes`, `TestAppointments`
+## 🧩 Database Relationships Diagram (العلاقات بين الجداول)
 
-**License Management:**  
-`DetainedLicenses`
+Below is a simplified diagram showing the main relationships between key tables
+in the DVLD Management System database:
+
+People
+│
+├──< Applications >── ApplicationTypes
+│ │
+│ ├──< LocalDrivingLicenseApplications >
+│ │ │
+│ │ └──< Tests >── TestTypes
+│ │ │
+│ │ └──< TestAppointments >
+│ │
+│ └──< Licenses >── LicenseClasses
+│ │
+│ ├──< InternationalLicenses >
+│ └──< DetainedLicenses >
+│
+└──< Drivers >
+│
+└──< Licenses >
+
+Users
+│
+└── Manages all system operations (Applications, Tests, Licenses, etc.)
+Countries
+│
+└── Referenced by People and Drivers tables
+
+yaml
+Copy code
 
 ---
 
