@@ -1,5 +1,7 @@
 # 🚗 Driving and Vehicle Licensing Department (DVLD) Management System
 
+![DVLD Main Screen](screenshots/image6frmMainScreen.png)
+
 This project is a comprehensive **desktop application** designed to manage the operations of a Driving and Vehicle Licensing Department (DVLD).  
 It was **fully developed individually** as part of my personal software development practice using **C# and .NET Framework**.
 
